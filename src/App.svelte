@@ -1,5 +1,4 @@
 <script>
-  import { onMount } from "svelte";
   let city = "New York";
   let searchQuery = "";
   let temperature = "22°C";
@@ -17,7 +16,7 @@
 </script>
 
 <div class="card">
-  <form class="search" on:submit={handleSearch}>
+  <form class="search" onsubmit={handleSearch}>
     <input
       type="text"
       placeholder="Enter city name"
@@ -46,5 +45,5 @@
 </div>
 
 <style>
-  
+
 </style>
